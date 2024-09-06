@@ -19,6 +19,7 @@ body {
 .right {
     width: 75vw;
     padding: 10px;
+    position: relative;
 }
 
 .home ul li {
@@ -53,6 +54,7 @@ h2 {
     flex-wrap: wrap;
     position: absolute;
     bottom: 0;
+    padding: 10px 0;
 }
 
 .footer a {
@@ -83,19 +85,20 @@ h2 {
     display: flex;
     gap: 10px;
     cursor: pointer;
-
+    max-height: 70vh;
 }
 
 .spotifyPlaylists .card {
     width: 182px;
     padding: 12px;
+    position: relative;
 }
 
 .card> * {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
-.card img {
+.card-img {
     width: 100%;
     object-fit: contain;
     border-radius: 6px;
@@ -105,3 +108,59 @@ h2 {
 .cardH1 {
     padding-left: 12px;
 }
+
+.playBtnSvg {
+    position: absolute;
+    right: 20px;
+    top: 122px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.button> * {
+    margin: 0 10px;
+}
+
+.singupBtn {
+    background-color: rgb(34, 34, 34);
+    color: grey;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.singupBtn:hover {
+    font-size: 17px;
+    color: white;
+}
+
+.loginBtn {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    border-radius: 21px;
+    padding: 10px;
+    width: 79px;
+    cursor: pointer;
+}
+
+.loginBtn:hover {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: aqua;
+    padding: 12px;
+}
+
+.playbar img {
+    width: 30px;
+    height: 30px;
+}
+
