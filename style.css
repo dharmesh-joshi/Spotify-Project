@@ -157,6 +157,9 @@ h2 {
     width: 100%;
     background-color: aqua;
     padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .playbar img {
