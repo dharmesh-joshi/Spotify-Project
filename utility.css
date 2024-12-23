@@ -83,7 +83,7 @@
 }
 
 /* Optional: For Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #5a5a5a #2e2e2e; /* thumb color | track color */
-}
+/* * {
+    scrollbar-width: thin; */
+   /* scrollbar-color: #5a5a5a #2e2e2e; */ /* thumb color | track color */
+/* } */
