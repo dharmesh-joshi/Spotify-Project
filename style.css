@@ -130,9 +130,11 @@ button {
 .search-input input::placeholder {
     color: #b3b3b3;
 }
+
 .search-input input:focus~.recent-serch-bar {
     display: block;
 }
+
 .recent-serch-bar {
     position: absolute;
     background-color: transparent;
@@ -1300,6 +1302,7 @@ footer {
     footer {
         margin-top: 25px;
     }
+
     .recent-serch-bar {
         left: -70px;
     }
@@ -1363,6 +1366,7 @@ footer {
     .right {
         width: 100vw;
     }
+
     .recent-serch-bar {
         display: none;
     }
@@ -1374,3 +1378,10 @@ footer {
         margin-top: 0;
     }
 }
+
+/* @media screen and (max-width: 420px) {
+    .cardContainer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+} */

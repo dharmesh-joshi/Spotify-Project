@@ -23,6 +23,13 @@
         footer {
             margin-top: 60px;
         }
+
+        @media screen and (max-width: 420px) {
+            .cardContainer {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
     </style>
 </head>
 
