@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--encore-body-font-stack, var(--fallback-fonts, sans-serif)), sans-serif;
+}
+
+:root {
+    --padding-cont: 20px 30px;
+    --padding-left-right-30: 0 30px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.profile-and-hedding-mic-camera {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    padding: var(--padding-cont);
+}
+
+.left-sides {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-images-of-users {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-images-of-users img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover cover;
+}
+
+.heading h1 {
+    font-size: 25px;
+}
+
+.right-sides {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-sides div ion-icon {
+    width: 25px;
+    height: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.right-sides div ion-icon:hover {
+    scale: 1.1;
+}
+
+
+.profile-images-of-users:hover {
+    scale: 1.05;
+}
+
+.searching-relevit-cont {
+    position: relative;
+}
+
+.searchs-bar {
+    padding: 0 30px;
+    padding: var(--padding-left-right-30);
+}
+
+.search-bar-main-input {
+    width: 100%;
+    padding: 12px 45px;
+    border-radius: 10px;
+}
+
+.search-bar-main-input::placeholder {
+    font-size: 15px;
+    color: #000;
+}
+
+.icon-search {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.icon-search ion-icon {
+    width: 25px;
+    height: 25px;
+    color: #000;
+}
+
+.exploreing {
+    padding: 20px 30px;
+    padding: var(--padding-cont);
+}
+
+.section-hedding {
+    font-size: 20px;
+}
+
+.browsing-card-cont {
+    margin: 10px 0;
+    display: grid;
+    /* flex-wrap: wrap; */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.browsing-card {
+    position: relative;
+    padding: 10px;
+    /* width: 150px; */
+    height: 70px;
+    background-color: rgb(220, 20, 140);
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.brc-btn-2 {
+    background-color: rgb(204, 1, 1);
+}
+
+.brc-btn-3 {
+    background-color: rgb(24, 24, 202);
+}
+
+.brc-btn-4 {
+    background-color: rgb(195, 19, 195);
+}
+
+.browsing-card:hover {
+    scale: 1.05;
+}
+
+.browsing-card img {
+    right: 0;
+    position: absolute;
+    width: 25%;
+    object-fit: cover;
+    background-position: top;
+    transform: rotate(25deg) translate(10%);
+    border-radius: 10px;
+}
+
+.browsing-card a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.browsing-card span {
+    font-size: 16px;
+    font-weight: 600;
+}
